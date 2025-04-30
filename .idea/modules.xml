@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Day-1/Day-1.iml" filepath="$PROJECT_DIR$/Day-1/Day-1.iml" />
       <module fileurl="file://$PROJECT_DIR$/Day-2/Day-2.iml" filepath="$PROJECT_DIR$/Day-2/Day-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Day-3/Day-3.iml" filepath="$PROJECT_DIR$/Day-3/Day-3.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-DSA-90-Days-Streak.iml" filepath="$PROJECT_DIR$/.idea/Java-DSA-90-Days-Streak.iml" />
     </modules>
   </component>
