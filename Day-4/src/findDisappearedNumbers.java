@@ -32,7 +32,6 @@ public class findDisappearedNumbers {
     public static void findDisappeared(int[] arr){
         int index = 0;
         while(index<arr.length){
-            display(arr);
             int correct = arr[index]-1;
             if(arr[correct]==arr[index])
                 index++;
