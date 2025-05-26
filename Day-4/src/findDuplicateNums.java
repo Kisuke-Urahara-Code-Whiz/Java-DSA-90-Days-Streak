@@ -1,5 +1,6 @@
-// Array of n integers containing numbers from [1,n] for every index
-// Find the numbers from [1,n] not entered
+// Array of n integers
+// contain integers from [1,n]
+// each integer appears once or twice
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -20,7 +21,7 @@ public class findDuplicateNums {
             findDisappeared(arr);
         }
         else{
-            System.out.println("Invalid numbers entered in the array. Array must contain only [1,n] numbers");
+            System.out.println("Invalid numbers entered in the array. Array must contain only [1,n] numbers and each integer appears once or twice");
         }
     }
 
@@ -31,7 +32,6 @@ public class findDuplicateNums {
         }
         return true;
     }
-
     public static void findDisappeared(int[] arr){
         int index = 0;
         while(index<arr.length){
@@ -47,10 +47,10 @@ public class findDuplicateNums {
     public static void check(int[] arr){
         int index = 0;
         int count = 0;
-        System.out.println("Disappeared Numbers in the array are : ");
+        System.out.println("Duplicate Numbers in the array are : ");
         while(index!=arr.length){
             if(arr[index]!=(index+1)) {
-                System.out.println(index + 1);
+                System.out.println(arr[index]);
                 count++;
             }
             index++;
