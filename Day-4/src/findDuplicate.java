@@ -6,7 +6,7 @@ public class findDuplicate {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of integers in the array : ");
         int n = sc.nextInt();
-        int[] arr = new int[n + 1];
+        int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
             System.out.println("Enter value for index " + i + " : ");
             arr[i] = sc.nextInt();
@@ -21,9 +21,21 @@ public class findDuplicate {
     }
 
     public static boolean checkCorrect(int[] arr) {
+        int arr2[] = new int[arr.length];
+        int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] > arr.length)
+            if (arr[i] > arr.length-1)
                 return false;
+            else {
+                for(int j=0;j<arr.length;j++) {
+                    if (arr[i] == arr2[j]){
+                        count++;
+                        if(count>1)
+                            return false;
+                    }
+                }
+            }
+            arr2[i] = arr[i];
         }
         return true;
     }
