@@ -41,8 +41,6 @@ public class findDisappearedNumbers {
             else
                 swap(arr,correct,index);
         }
-        System.out.println("Test array : ");
-        display(arr);
         check(arr);
     }
 
