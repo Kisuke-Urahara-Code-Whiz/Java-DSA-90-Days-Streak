@@ -1,3 +1,6 @@
+// Array will have n+1 distinct numbers such that it will have [1,n] distinct numbers
+// Theoretically, there will be only duplicate find the duplicate
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -49,25 +52,7 @@ public class findDuplicate {
             else
                 swap(arr, correct, index);
         }
-        System.out.println("Test array : ");
-        display(arr);
-        check(arr);
-    }
-
-    public static void check(int[] arr) {
-        int index = 0;
-        int count = 0;
-        System.out.println("Disappeared Numbers in the array are : ");
-        while (index != arr.length) {
-            if (arr[index] != (index + 1)) {
-                System.out.println(index + 1);
-                count++;
-            }
-            index++;
-        }
-        if (count == 0) {
-            System.out.println("No number is missing");
-        }
+        System.out.println("Duplicate number = " + arr[arr.length-1]);
     }
 
     public static void swap(int[] arr, int first, int second) {
