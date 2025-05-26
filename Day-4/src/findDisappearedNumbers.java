@@ -1,3 +1,6 @@
+// Array of n integers containing numbers from [1,n] for every index
+// Find the numbers from [1,n] not entered
+
 import java.util.Arrays;
 import java.util.Scanner;
 
