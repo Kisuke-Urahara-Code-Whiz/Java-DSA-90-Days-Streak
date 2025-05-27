@@ -56,37 +56,45 @@ public class MissingNumber {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of integers in the array : ");
-        int n =  sc.nextInt();
-        int[] arr  = new int[n];
-        for(int i=0;i<n;i++) {
-            System.out.println("Enter value for index "+i+" : ");
-            arr[i]=sc.nextInt();
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.println("Enter value for index " + i + " : ");
+            arr[i] = sc.nextInt();
         }
         System.out.println("Original array : ");
         display(arr);
-        if(checkCorrect(arr)){
-            findDisappeared(arr);
+        sort(arr);
+        int missing = n;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != i)
+                missing = i;
         }
-        else{
-            System.out.println("Invalid numbers entered in the array. Array must contain only [1,n] numbers");
-        }
+        System.out.println("The missing number is " + missing);
     }
 
-    public static void display(int[] arr){
+    public static void display(int[] arr) {
         System.out.println(Arrays.toString(arr));
     }
 
-    public static void swap(int[] arr, int first, int second){
+    public static void swap(int[] arr, int first, int second) {
         int temp = arr[first];
-        arr[first]=arr[second];
-        arr[second]=temp;
+        arr[first] = arr[second];
+        arr[second] = temp;
     }
 
-    public static boolean checkCorrect(int[] arr){
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]>arr.length)
-                return false;
+    public static void sort(int[] arr) {
+        int index = 0;
+        while (index < arr.length) {
+            int correct = arr[index];
+            if (correct != arr.length) {
+                if (arr[correct] == arr[index])
+                    index++;
+                else
+                    swap(arr, correct, index);
+            } else
+                index++;
+
         }
-        return true;
     }
 }
