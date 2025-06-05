@@ -48,6 +48,6 @@ public class Binary_Search {
             }
         }
 
-        return -1; 
+        return -1;
     }
 }
