@@ -10,5 +10,6 @@ public class Singly_LL_Ops {
         list.deleteLast();
         list.display();
         list.displaySize();
+        System.out.println(list.size());
     }
 }
