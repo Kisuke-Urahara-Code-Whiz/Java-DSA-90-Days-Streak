@@ -56,6 +56,22 @@ public class Singly_LL {
         }
     }
 
+    public void deleteLast(){
+        if(size<2)
+            deleteFirst();
+        else{
+            Node temp = head;
+            int a = 1;
+            while(a<=size-1){
+                temp=temp.next;
+                a++;
+            }
+            temp.next = null;
+            size--;
+        }
+
+    }
+
     public void displaySize(){
         System.out.println("Size of the linked list is - "+size);
     }
