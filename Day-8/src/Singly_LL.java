@@ -41,8 +41,23 @@ public class Singly_LL {
                 a++;
             }
             temp.next = node;
+            size++;
         }
 
+    }
+
+    public void deleteFirst(){
+        if(size!=0){
+            if(size==1)
+                head = null;
+            else
+                head = head.next;
+            size--;
+        }
+    }
+
+    public void displaySize(){
+        System.out.println("Size of the linked list is - "+size);
     }
 
     public void display() {
