@@ -72,6 +72,10 @@ public class Singly_LL {
 
     }
 
+    public int size(){
+        return size;
+    }
+
     public void displaySize(){
         System.out.println("Size of the linked list is - "+size);
     }
