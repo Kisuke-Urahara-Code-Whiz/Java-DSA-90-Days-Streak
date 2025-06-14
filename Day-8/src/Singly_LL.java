@@ -62,7 +62,7 @@ public class Singly_LL {
         else{
             Node temp = head;
             int a = 1;
-            while(a<=size-1){
+            while(a<size-1){
                 temp=temp.next;
                 a++;
             }

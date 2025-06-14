@@ -7,6 +7,7 @@ public class Singly_LL_Ops {
         list.insertLast(4);
         list.insertLast(5);
         list.insertLast(1);
+        list.deleteLast();
         list.display();
         list.displaySize();
     }
