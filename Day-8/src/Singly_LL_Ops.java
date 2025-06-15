@@ -1,10 +1,11 @@
 public class Singly_LL_Ops {
     public static void main(String[] args) {
         Singly_LL list = new Singly_LL();
-        list.insertFirst(10);
-        list.insertAfter(2,0);
+        for (int i = 1; i <= 5; i++) {
+            list.insertFirst(i * 10); // 50, 40, ..., 10
+            list.insertLast(i * 100); // 100, 200, ..., 500
+        }
         list.display();
-        list.displaySize();
-        System.out.println(list.size());
+
     }
 }

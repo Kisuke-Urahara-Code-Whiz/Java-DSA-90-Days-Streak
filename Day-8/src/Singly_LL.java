@@ -72,6 +72,27 @@ public class Singly_LL {
 
     }
 
+    public void deleteIndex(int index){
+        if(index>size-1 || index<0)
+            System.out.println("Invalid index");
+        else if(size==0 || size==1)
+            deleteFirst();
+        else{
+            if(index==0)
+                deleteFirst();
+            else if(index==size-1)
+                deleteLast();
+            else{
+                Node temp = head;
+                for(int i=1;i<=index-1;i++)
+                    temp = temp.next;
+                System.out.println("Deleting index "+index+" , value = "+temp.next.value);
+                temp.next = temp.next.next;
+                size--;
+            }
+        }
+    }
+
     public int size(){
         return size;
     }
@@ -80,7 +101,7 @@ public class Singly_LL {
     public void insertBefore(int value, int index){
         if(index>size-1 || index<0)
             System.out.println("Invalid index");
-        else if(size==0 || size==1)
+        else if(size==0 || size==1 || index==0)
             insertFirst(value);
         else{
             Node temp = head;
