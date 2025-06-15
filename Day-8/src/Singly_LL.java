@@ -72,8 +72,65 @@ public class Singly_LL {
 
     }
 
+    public void deleteIndex(int index){
+        if(index>size-1 || index<0)
+            System.out.println("Invalid index");
+        else if(size==0 || size==1)
+            deleteFirst();
+        else{
+            if(index==0)
+                deleteFirst();
+            else if(index==size-1)
+                deleteLast();
+            else{
+                Node temp = head;
+                for(int i=1;i<=index-1;i++)
+                    temp = temp.next;
+                System.out.println("Deleting index "+index+" , value = "+temp.next.value);
+                temp.next = temp.next.next;
+                size--;
+            }
+        }
+    }
+
     public int size(){
         return size;
+    }
+
+    //indexing starts from 0
+    public void insertBefore(int value, int index){
+        if(index>size-1 || index<0)
+            System.out.println("Invalid index");
+        else if(size==0 || size==1 || index==0)
+            insertFirst(value);
+        else{
+            Node temp = head;
+            for(int i=1;i<index;i++)
+                temp = temp.next;
+            Node node = new Node(value,temp.next);
+            temp.next = node;
+            size++;
+        }
+
+
+    }
+
+    //indexing starts from 0
+    public void insertAfter(int value, int index){
+        if(index>size-1 || index<0)
+            System.out.println("Invalid index");
+        else if(size==0)
+            insertFirst(value);
+        else if(size==1)
+            insertLast(value);
+        else{
+            if(index==size-1){
+                insertLast(value);
+            }
+            else{
+                insertBefore(value,index+1);
+            }
+        }
     }
 
     public void displaySize(){
