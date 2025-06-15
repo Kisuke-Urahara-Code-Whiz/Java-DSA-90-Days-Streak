@@ -76,6 +76,42 @@ public class Singly_LL {
         return size;
     }
 
+    //indexing starts from 0
+    public void insertBefore(int value, int index){
+        if(index>size-1 || index<0)
+            System.out.println("Invalid index");
+        else if(size==0 || size==1)
+            insertFirst(value);
+        else{
+            Node temp = head;
+            for(int i=1;i<index;i++)
+                temp = temp.next;
+            Node node = new Node(value,temp.next);
+            temp.next = node;
+            size++;
+        }
+
+
+    }
+
+    //indexing starts from 0
+    public void insertAfter(int value, int index){
+        if(index>size-1 || index<0)
+            System.out.println("Invalid index");
+        else if(size==0)
+            insertFirst(value);
+        else if(size==1)
+            insertLast(value);
+        else{
+            if(index==size-1){
+                insertLast(value);
+            }
+            else{
+                insertBefore(value,index+1);
+            }
+        }
+    }
+
     public void displaySize(){
         System.out.println("Size of the linked list is - "+size);
     }
