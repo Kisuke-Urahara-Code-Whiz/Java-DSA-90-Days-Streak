@@ -1,6 +1,8 @@
+package Programs;
+
 import java.util.*;
 
-class Bubble_Sort {
+class BubbleSort {
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
         System.out.println("Enter the number of elements in the array : ");
@@ -38,7 +40,7 @@ class Bubble_Sort {
         Scanner sc = new Scanner(System.in);
         for(int i=0;i<n;i++){
             System.out.println("Enter element no. "+(i+1)+":");
-            arr[i] = sc.nextInt();dz
+            arr[i] = sc.nextInt();
         }
     }
 }
