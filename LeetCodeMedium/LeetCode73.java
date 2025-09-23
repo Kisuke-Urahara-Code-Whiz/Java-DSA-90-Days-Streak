@@ -1,6 +1,8 @@
+package LeetCodeMedium;
+
 import java.util.ArrayList;
 
-public class LeetCode_73 {
+public class LeetCode73 {
     public static void main(String[] args) {
         int matrix[][] = {
                 {0, 1, 2, 0},
