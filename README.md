@@ -1,11 +1,13 @@
-Leetcode Questions Solved -
+# LeetCode Progress Tracker
 
-1. Day 1-30
+This is a follow-up of the number of LeetCode questions solved.
 
-Easy - 5 <br/>
-Medium - 5 <br/>
-Hard - 1 <br/>
-Total - 9
+Questions Solved:
 
-Follow Ups to be Completed - P1
+Difficulty   | Count
+------------ | -----
+Easy         | 5
+Medium       | 4
+Hard         | 2
+Total        | 11
 
