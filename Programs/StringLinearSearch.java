@@ -1,13 +1,15 @@
+package Programs;
+
 import java.util.Scanner;
 
-public class Linear_Search_String {
+public class StringLinearSearch {
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
         System.out.println("Enter the word : ");
         String str =  sc.next();
         System.out.println("Original String :");
         System.out.println(str);
-        if(str.length()==0)
+        if(str.isEmpty())
             System.out.println("No Word Entered");
         else {
             System.out.println("Enter the letter to search in lowercase : ");

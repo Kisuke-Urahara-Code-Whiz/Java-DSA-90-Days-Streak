@@ -1,6 +1,8 @@
+package Programs;
+
 import java.util.*;
 
-class Linear_Search {
+class LinearSearch {
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
         System.out.println("Enter the number of elements in the array : ");
@@ -14,7 +16,7 @@ class Linear_Search {
         else {
             System.out.println("Enter the element to search : ");
             int search = sc.nextInt();
-            LinearSearch(arr, search);
+            linearSearch(arr, search);
         }
     }
 
@@ -26,7 +28,7 @@ class Linear_Search {
         }
     }
 
-    public static void LinearSearch(int[] arr, int search) {
+    public static void linearSearch(int[] arr, int search) {
         int length = 0;
         for(int i:arr){
             if(i==search) {

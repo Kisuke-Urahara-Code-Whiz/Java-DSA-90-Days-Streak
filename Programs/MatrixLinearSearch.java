@@ -1,7 +1,9 @@
+package Programs;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DDA_Array_LinearSearch {
+public class MatrixLinearSearch  {
     public static void main(String[] args) {
         Scanner sc =  new Scanner(System.in);
         System.out.println("Enter the number of rows in the matrix : ");
