@@ -1,7 +1,9 @@
+package LeetCodeMedium;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode_22 {
+public class LeetCode22 {
 
     public static List<String> generateParenthesis(int n) {
         List<String> list = new ArrayList<>();

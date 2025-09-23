@@ -1,6 +1,8 @@
+package LeetCodeHard;
+
 import java.util.Stack;
 
-public class LeetCode_32 {
+public class LeetCode32 {
     public static void main(String[] args) {
         String s = "()(()()(()";
         System.out.println("Max: " + longestValidParentheses(s));
