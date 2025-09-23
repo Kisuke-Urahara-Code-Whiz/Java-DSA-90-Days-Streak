@@ -1,3 +1,5 @@
+package LeetCodeEasy;
+
 //LEETCODE EASY
 //448. Find All Numbers Disappeared in an Array
 //        Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
@@ -26,7 +28,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class findDisappearedNumbers {
+public class LeetCode448 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of integers in the array : ");

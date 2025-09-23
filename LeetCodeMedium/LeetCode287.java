@@ -1,3 +1,5 @@
+package LeetCodeMedium;
+
 //LEETCODE MEDIUM
 //442. Find All Duplicates in an Array
 //        Given an integer array nums of length n where all the integers of nums are in the range [1, n] and each integer appears at most twice, return an array of all the integers that appears twice.
@@ -30,7 +32,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class findDuplicateNums {
+public class LeetCode287 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of integers in the array : ");
