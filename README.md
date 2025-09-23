@@ -3,7 +3,7 @@ Leetcode Questions Solved -
 1. Day 1-30
 
 Easy - 5 <br/>
-Medium - 4 <br/>
+Medium - 5 <br/>
 Hard - 1 <br/>
 Total - 9
 

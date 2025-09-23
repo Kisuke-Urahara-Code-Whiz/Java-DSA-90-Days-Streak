@@ -38,7 +38,7 @@ class Bubble_Sort {
         Scanner sc = new Scanner(System.in);
         for(int i=0;i<n;i++){
             System.out.println("Enter element no. "+(i+1)+":");
-            arr[i] = sc.nextInt();
+            arr[i] = sc.nextInt();dz
         }
     }
 }
