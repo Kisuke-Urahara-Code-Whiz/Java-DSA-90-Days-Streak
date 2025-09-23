@@ -8,6 +8,6 @@ Difficulty   | Count
 ------------ | -----
 Easy         | 5
 Medium       | 4
-Hard         | 2
-Total        | 11
+Hard         | 3
+Total        | 12
 
