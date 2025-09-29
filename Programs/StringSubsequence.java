@@ -67,28 +67,31 @@ public class StringSubsequence {
         }
     }
 
-    public boolean issubsequence(String s, String str, String t){
-        boolean flag = false;
-        if(str.length()!=0){
-            if(str.length()!=1) {
-                flag = flag || issubsequence(s + str.charAt(0), str.substring(1,str.length()), t);
-                flag = flag || issubsequence(s, str.substring(1,str.length()), t);
-            }
-            else{
-                flag = flag || issubsequence(s+str.charAt(0), "", t);
-                flag = flag || issubsequence(s, "", t);
-            }
+    public boolean issubsequence(String s, String t){
+        if(t.isEmpty()){
+            return true;
         }
         else{
-            if(t.equals(s))
-                flag = true;
+            int p1 = 0;
+            int p2 = 0;
+            int l1 = s.length();
+            int l2 = t.length();
+            while(p2<l2 && p1<l1){
+                if(s.charAt(p1) == t.charAt(p2)){
+                    p2+=1;
+                }
+                p1+=1;
+            }
+            if(p2==l2)
+                return true;
+            else
+                return false;
         }
-        return flag;
     }
 
     public static void main(String[] args) {
-        String a = "ahbgdc";
-        String b = "axc";
+        String a = "abc";
+        String b = "abc";
         System.out.println("Original String -> "+a);
         StringSubsequence obj = new StringSubsequence();
         System.out.println("Subsequences -> ");
@@ -99,7 +102,7 @@ public class StringSubsequence {
         obj.repeatingSubsequence("",a);
         System.out.println(obj.strings);
         System.out.println("Non-Repeating Subsequences Count -> "+ obj.strings.size());
-        System.out.println("Is "+b+" a subsequence of "+a+" -> "+ obj.issubsequence("", a, b));
+        System.out.println("Is "+b+" a subsequence of "+a+" -> "+ obj.issubsequence(a,b));
     }
 
 }
