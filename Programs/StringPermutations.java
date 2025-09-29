@@ -1,6 +1,6 @@
 package Programs;
 
-public class Permutations {
+public class StringPermutations {
 
     public void permutations(String processed, String unprocessed){
         if(unprocessed.isEmpty())
@@ -14,7 +14,7 @@ public class Permutations {
 
     public static void main(String[] args) {
         String s = "abc";
-        Permutations obj = new Permutations();
+        StringPermutations obj = new StringPermutations();
         System.out.println("Original String -> "+s);;
         System.out.println("Permutations -> ");
         obj.permutations("", s);
