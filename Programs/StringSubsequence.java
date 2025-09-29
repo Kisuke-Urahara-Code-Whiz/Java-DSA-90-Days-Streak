@@ -49,16 +49,36 @@ public class StringSubsequence {
         }
     }
 
+    public int subsequenceCount(String s, String str){
+        if(str.length()!=0){
+            int p = 0;
+            if(str.length()!=1) {
+                p+=subsequenceCount(s + str.charAt(0), str.substring(1,str.length()));
+                p+=subsequenceCount(s, str.substring(1,str.length()));
+            }
+            else{
+                p+=subsequenceCount(s+str.charAt(0), "");
+                p+=subsequenceCount(s, "");
+            }
+            return p;
+        }
+        else{
+            return 1;
+        }
+    }
+
     public static void main(String[] args) {
-        String a = "aab";
+        String a = "sougata";
         System.out.println("Original String -> "+a);
         StringSubsequence obj = new StringSubsequence();
         System.out.println("Subsequences -> ");
         obj.subsequence("",a);
         System.out.println(obj.stringList);
+        System.out.println("Subsequnce Count -> "+ obj.subsequenceCount("",a));
         System.out.println("Non-Repeating Subsequences -> ");
         obj.repeatingSubsequence("",a);
         System.out.println(obj.strings);
+        System.out.println("Non-Repeating Subsequences Count -> "+ obj.strings.size());
     }
 
 }
