@@ -6,8 +6,8 @@ Questions Solved:
 
 Difficulty   | Count
 ------------ | -----
-Easy         | 11
+Easy         | 12
 Medium       | 11
 Hard         | 6
-Total        | 28
+Total        | 29
 

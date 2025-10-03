@@ -11,7 +11,7 @@ public class LeetCode876 {
     }
 
     public ListNode middleNode(ListNode head) {
-        if(head==null){
+        if (head == null) {
             ListNode res = new ListNode();
             return res;
         }
@@ -20,8 +20,8 @@ public class LeetCode876 {
         ListNode s1 = head;
         ListNode f1 = head;
         int l = -1;
-        do{
-            if(l==-1) {
+        do {
+            if (l == -1) {
                 if (f1.next == null) {
                     l = median(f);
                 } else if (f1.next.next == null) {
@@ -33,21 +33,20 @@ public class LeetCode876 {
                     s1 = s1.next;
                     f1 = f1.next.next;
                 }
-            }
-            else{
+            } else {
                 s += 1;
                 s1 = s1.next;
             }
         }
-        while(s!=l);
+        while (s != l);
         return s1;
     }
 
-    public int median(int n){
-        if(n%2!=0)
-            return (n+1)/2;
+    public int median(int n) {
+        if (n % 2 != 0)
+            return (n + 1) / 2;
         else
-            return (n/2)+1;
+            return (n / 2) + 1;
     }
 
     public ListNode createLinkedList(int[] arr) {
