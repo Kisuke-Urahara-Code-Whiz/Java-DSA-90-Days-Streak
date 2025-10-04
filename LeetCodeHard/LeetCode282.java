@@ -4,6 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
+// This solution -> not the optimal solution
+// TC -> O(n*3^n-1)
+// Doesnt hold multi digit concatenation and I don't understand it
+
 public class LeetCode282 {
 
     List<String> arr = new ArrayList<>();
@@ -65,17 +69,15 @@ public class LeetCode282 {
 
     public List<String> addOperators(String num, int target) {
         int l = num.length();
-        if(num.length()==1 && num.charAt(0)=='0')
-            backtrack(new char[]{'0'}, new char[1], 0, 0 , target);
-        else{
-            int p = 0;
-            while(num.charAt(p)=='0') {
-                p+=1;
+        int p = 0;
+        if(num.lastIndexOf('0')!=num.length()-1) {
+            while (num.charAt(p) == '0') {
+                p += 1;
             }
-            char[] nums = num.substring(p).toCharArray();
-            char[] exp = new char[(nums.length*2)-1];
-            backtrack(nums, exp, 0,0 ,target);
         }
+        char[] nums = num.substring(p).toCharArray();
+        char[] exp = new char[(nums.length*2)-1];
+        backtrack(nums, exp, 0,0 ,target);
         return arr;
     }
 
@@ -135,10 +137,10 @@ public class LeetCode282 {
     }
 
     public static void main(String[] args) {
-        String num = "00123";
+        String num = "00";
         System.out.println("String -> "+num);
         LeetCode282 obj = new LeetCode282();
-        obj.addOperators(num, 6);
+        obj.addOperators(num, 0);
         System.out.println("Possible Combinations achieving target -> \n"+obj.arr);
     }
 }
