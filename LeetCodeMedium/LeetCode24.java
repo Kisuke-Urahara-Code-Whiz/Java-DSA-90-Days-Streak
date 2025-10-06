@@ -62,7 +62,7 @@ public class LeetCode24 {
 
     public static void main(String[] args) {
         LeetCode24 obj = new LeetCode24();
-        int[] values = {};
+        int[] values = {1,2,3,4,5};
         ListNode head = obj.createLinkedList(values);
         System.out.print("Linked List: ");
         obj.displayLinkedList(head);
