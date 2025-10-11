@@ -46,7 +46,7 @@ public class LeetCode206 {
         System.out.print("Linked List: ");
         obj.displayLinkedList(head);
         System.out.println("Linked List after Reversing: ");
-        head = obj.reverseList(null);
+        head = obj.reverseList(head);
         obj.displayLinkedList(head);
     }
 
