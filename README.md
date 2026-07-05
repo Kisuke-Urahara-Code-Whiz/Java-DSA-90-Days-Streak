@@ -7,7 +7,7 @@ Difficulty   | Count
 Easy         | 74
 Medium       | 105 (106) 
 Hard         | 12
-Total        | 191 (192)
+Total        | 192 (193)
 
 Questions Solved in GeekForGeeks: 
 
