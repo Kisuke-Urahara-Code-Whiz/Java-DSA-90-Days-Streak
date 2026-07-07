@@ -5,7 +5,7 @@ Questions Solved in LeetCode:
 Difficulty   | Count
 ------------ | -----
 Easy         | 76
-Medium       | 108 (109) 
+Medium       | 109 (110) 
 Hard         | 12
 Total        | 197 (198)
 
