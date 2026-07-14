@@ -4,21 +4,29 @@ public class LeetCode2685 {
 
     int[] parent;
     int[] size;
+    int[] edgesSize;
 
     public int countCompleteComponents(int n, int[][] edges) {
         parent = new int[n];
         size = new int[n];
+        edgesSize = new int[n];
+
         for(int i=0;i<n;i++){
             parent[i] = i;
             size[i] = 1;
         }
+
         for(int[] i: edges){
             union(i);
         }
+
         int result = 0;
+
         for(int i=0;i<n;i++){
-            if(i==parent[i]) result++;
+            if(parent[i]==i && edgesSize[i]==((size[i]*(size[i]-1))/2))
+                result++;
         }
+
         return result;
     }
 
@@ -40,11 +48,13 @@ public class LeetCode2685 {
             if(size1<size2){
                 size[parent2]+=size1;
                 parent[parent1] = parent2;
+                edgesSize[parent2]+=edgesSize[parent1]+1;
             } else {
                 size[parent1]+=size2;
-                parent[size2] = parent1;
+                parent[parent2] = parent1;
+                edgesSize[parent1]+=edgesSize[parent2]+1;
             }
-        }
+        } else edgesSize[parent1]++;
     }
 
 }
