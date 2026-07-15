@@ -2,7 +2,7 @@ package LeetCodeMedium;
 
 import java.util.Arrays;
 
-public class LeetCode3532 {
+public class LeetCode3532_DSU {
 
     int[] parent;
     int[] size;
@@ -50,7 +50,7 @@ public class LeetCode3532 {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(new LeetCode3532().pathExistenceQueries(
+        System.out.println(Arrays.toString(new LeetCode3532_DSU().pathExistenceQueries(
                 4,
                 new int[]{2,5,6,8},
                 2,
