@@ -1,6 +1,6 @@
 package LeetCodeEasy;
 
-public class LeetCode560 {
+public class LeetCode506 {
 
     public String[] findRelativeRanks(int[] score) {
         int[] heap = new int[score.length+1];

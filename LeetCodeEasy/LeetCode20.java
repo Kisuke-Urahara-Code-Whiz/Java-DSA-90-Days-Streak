@@ -2,7 +2,7 @@ package LeetCodeEasy;
 
 import java.util.Stack;
 
-public class LeetCode1539 {
+public class LeetCode20 {
 
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<Character>();
