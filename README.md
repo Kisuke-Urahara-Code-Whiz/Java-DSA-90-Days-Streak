@@ -6,8 +6,8 @@ Difficulty   | Count
 ------------ | -----
 Easy         | 84
 Medium       | 120 (121) 
-Hard         | 12
-Total        | 216 (217)
+Hard         | 13
+Total        | 217 (218)
 
 Questions Solved in GeekForGeeks: 
 
