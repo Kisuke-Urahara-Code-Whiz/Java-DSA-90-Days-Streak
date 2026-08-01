@@ -1,4 +1,4 @@
-package LeetCodeEasy;
+package LeetCodeMedium;
 
 import Programs.TreeNode;
 
