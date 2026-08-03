@@ -16,6 +16,7 @@ public class LeetCode205 {
                 map2.put(t.charAt(i), s.charAt(i));
             } else if(c1==null || c2==null) return false;
             else if(c1!=t.charAt(i) || c2!=s.charAt(i)) return false;
+        }
 
         return true;
     }
