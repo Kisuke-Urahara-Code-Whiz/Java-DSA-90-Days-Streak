@@ -5,9 +5,9 @@ Questions Solved in LeetCode:
 Difficulty   | Count
 ------------ | -----
 Easy         | 89
-Medium       | 128 (129) 
+Medium       | 129 (130) 
 Hard         | 13
-Total        | 230 (231)
+Total        | 231 (232)
 
 Questions Solved in GeekForGeeks: 
 
