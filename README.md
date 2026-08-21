@@ -4,10 +4,10 @@ Questions Solved in LeetCode:
 
 Difficulty   | Count
 ------------ | -----
-Easy         | 92
+Easy         | 93
 Medium       | 130 (131) 
 Hard         | 13
-Total        | 235 (236)
+Total        | 236 (237)
 
 Questions Solved in GeekForGeeks: 
 
